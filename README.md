@@ -1,0 +1,2 @@
+# webfejlesztes
+Webfejlesztes tantárgy beadandó
