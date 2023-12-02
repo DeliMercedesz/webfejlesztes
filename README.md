@@ -2,7 +2,7 @@
 Webfejlesztes tantárgy beadandó
 Oldal készítője: Deli Mercédesz
 
-Oldal címe:
+Oldal címe: https://delimercedesz.github.io/webfejlesztes/
 
 Leírás: Az oldal egy általam megálmodott modellügynökséget tükröz. Funkcióját tekintve modellek bérlésével és felkarolásával foglalkozik.
 
