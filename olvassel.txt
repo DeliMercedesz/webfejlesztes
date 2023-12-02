@@ -1,0 +1,13 @@
+Oldal készítője: Deli Mercédesz
+
+Oldal címe:
+
+Leírás: Az oldal egy általam megálmodott modellügynökséget tükröz. Funkcióját tekintve modellek bérlésével és felkarolásával foglalkozik.
+
+JavaScript: A kódom a szolgáltatások oldalon található. Funkcióját tekintve modellbérlésre szólgál, ahol  az általunk kiválasztott opció után, a legmegfelelőbb modelt dobja ki a program, a bérlés árával együtt. Ha a felhasználó nem válaszol az egyik kérdésre, akkor hibaüzenet jelenik meg.
+
+Egyedi fonttípus: AZ egyedi betűtípusom a font almappában található és szinte az összes oldalamon használom 'Cinzel' néven, legtöbbször a főcímeknél.
+
+
+Az általam használt képek nagy rész szabadon felhasználható és a https://unsplash.com oldalról vettem át.
+Kivételt képeznek a logó képek, azokat a https://logowik.com weboldalról töltöttem le.
