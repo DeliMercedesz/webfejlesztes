@@ -12,6 +12,60 @@
     <link rel="icon" type="image/png" sizes="16x16" href="kepek/icon/favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
     <title>Aphrodite</title>
+       <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myform").validate({
+                rules: {
+                    vnev: "required",
+                    knev: "required",
+                    lakhely: "required",
+                    insta: "required",
+                    magas: "required",
+                    suly: "required",
+                    derek: "required",
+                    labm: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    szulido: {
+                        required: true,
+                        date: true
+                    },
+                    telszam: {
+                        required: true,
+                        tel: true
+                    },
+                    adatvedelem: {
+                        required: true,
+                    },
+                },
+                messages: {
+                    vnev: "Kérlek írd be a vezetékneved!",
+                    knev: "Kérlek írd be a keresztneved!",
+                    lakhely: "Kérlek írd be a lakhelyed!",
+                    insta: "Kérlek írd be az instagrammodat!",
+                    email: {
+                        required: "Kérlek add meg az e-mail címedet!",
+                        email: " Kérlek, létező e-mail címet adj meg!"
+                    },
+                    telszam: {
+                        required: "Kérlek add meg a telefonszámod!",
+                        tel: " Kérlek, létező telefonszámot adj meg!"
+                    },
+                    adatvedelem: " Kérlek fogadd el a feltételeinket!",
+                    szulido: "Kérlek add meg a születési idődet!",
+                    magas: "Kérlek add meg a magasságod!",
+                    suly: "Kérlek add meg a súlyod!",
+                    derek: "Kérlek add meg a derékméreted!",
+                    labm: "Kérlek add meg a lábméreted!",
+                },
+
+            });
+        });
+    </script>
 </head>
 
 <body>
