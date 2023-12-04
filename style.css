@@ -260,6 +260,10 @@ figure.logo img:hover {
 
 
 /* Modell oldal */
+label.error {
+    color: #FB3A3A;
+}
+
 article.modell img {
     display: block;
     width: 100%;
