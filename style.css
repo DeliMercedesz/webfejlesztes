@@ -260,10 +260,6 @@ figure.logo img:hover {
 
 
 /* Modell oldal */
-label.error {
-    color: #FB3A3A;
-}
-
 article.modell img {
     display: block;
     width: 100%;
@@ -376,6 +372,11 @@ article.szemelyes {
 }
 
 /* Kapcsolat */
+
+label.error {
+    color: #FB3A3A;
+}
+
 .kapcsolat {
     text-align: center;
 }
