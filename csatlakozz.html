@@ -35,7 +35,6 @@
                     },
                     telszam: {
                         required: true,
-                        tel: true
                     },
                     adatvedelem: {
                         required: true,
@@ -50,10 +49,7 @@
                         required: "Kérlek add meg az e-mail címedet!",
                         email: " Kérlek, létező e-mail címet adj meg!"
                     },
-                    telszam: {
-                        required: "Kérlek add meg a telefonszámod!",
-                        tel: " Kérlek, létező telefonszámot adj meg!"
-                    },
+                    telszam: "Kérlek add meg a telefonszámod!",
                     adatvedelem: " Kérlek fogadd el a feltételeinket!",
                     szulido: "Kérlek add meg a születési idődet!",
                     magas: "Kérlek add meg a magasságod!",
@@ -65,17 +61,10 @@
             });
         });
     </script>
-    <style>
-        label.error
-        {
-        color: #FB3A3A;
-        }
-    </style>
 
 
     <title>Aphrodite</title>
 </head>
-
 <body>
     <header id="fent">
         <h1>Aphrodite</h1>
@@ -116,24 +105,24 @@
                     <p><label for="lakhely">Lakhely:</label></p>
                     <input type="text" name="lakhely" class="doboz" id="lakhely">
                     <p><label for="telszam">Telefonszám:</label></p>
-                    <input type="tel" name="telszam" class="doboz" id="telszam">
+                    <input type="tel" name="telszam" class="doboz" id="telszam"  placeholder="+36" pattern="[+36][0-9]{9}">
                     <p><label for="insta">Instagram:</label></p>
                     <input type="text" name="insta" class="doboz" id="insta">
                 </article>
                 <article class="szemelyes">
                     <h3>Külső tulajdonságok</h3>
                     <p><label for="magas">Magasság:</label></p>
-                    <input type="number" name="magas" class="doboz" id="magas">
+                    <input type="number" name="magas" class="doboz" id="magas" min="0">
                     <p><label for="suly">Testsúly:</label></p>
-                    <input type="number" name="suly" class="doboz" id="suly" >
+                    <input type="number" name="suly" class="doboz" id="suly" min="0" >
                     <p><label for="derek">Derékméret:</label></p>
-                    <input type="number" name="derek" class="doboz" id="derek">
+                    <input type="number" name="derek" class="doboz" id="derek" min="0">
                     <p><label for="hajszin">Hajszín:</label></p>
                     <input type="color" name="hajszin" class="doboz" id="hajszin">
                     <p><label for="szemszin">Szemszín:</label></p>
                     <input type="color" name="szemszin" class="doboz" id="szemszin">
                     <p><label for="labm">Lábméret:</label></p>
-                    <input type="number" name="labm" class="doboz" id="labm" >
+                    <input type="number" name="labm" class="doboz" id="labm" min="0">
                 </article>
                 <article class="szemelyes">
                     <h3>Belső tulajdonságok</h3>
