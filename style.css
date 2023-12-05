@@ -18,8 +18,9 @@ body {
     margin: 1%;
     height: fit-content;
 }
+
 @font-face {
-    font-family: 'Cinzel' ;
+    font-family: 'Cinzel';
     src: url("font/Cinzel-VariableFont_wght.ttf");
 }
 
@@ -61,11 +62,12 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
 }
-footer p{
+
+footer p {
     width: 100%;
 }
 
-footer h2{
+footer h2 {
     font-size: 15px;
     margin: 0;
 }
@@ -136,7 +138,7 @@ a:hover {
 
 .hatter {
     background-image: url("kepek/21.jpg");
-    height: 400px;
+    height: 45vh;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -188,8 +190,8 @@ a:hover {
 .container article.charlotte img,
 article.isabella img {
     display: block;
-    width: 90%;
-    height: fit-content;
+    width: 70vw;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     border-radius: 3px;
@@ -309,7 +311,7 @@ article.modell img {
 /* Jelentkezz oldal */
 .hatter2 {
     background-image: url("kepek/10.jpg");
-    height: 280px;
+    height: 35vh;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -396,6 +398,7 @@ label.error {
     margin-top: 5px;
     font-size: 25px;
 }
+
 .kapcsolat h2 {
     font-size: 30px;
 }
@@ -417,7 +420,7 @@ iframe {
 
 .hatter3 {
     background-image: url("kepek/11.jpg");
-    height: 380px;
+    height: 35vh;
     width: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -441,7 +444,8 @@ iframe {
 .kerdval {
     width: 100%;
 }
-.kerdval p{
+
+.kerdval p {
     margin-bottom: 15px;
 }
 
@@ -449,7 +453,7 @@ iframe {
     text-decoration: underline;
     font-family: 'Cinzel';
     font-size: 20px;
-    padding-left:5px;
+    padding-left: 5px;
     padding-right: 5px;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -473,9 +477,11 @@ article.arlista form {
 .arlista hr {
     margin-top: 10px;
 }
-label h3{
+
+label h3 {
     margin: 0;
 }
+
 /* Reszponzivitás */
 
 @media only screen and (min-width: 600px) {
