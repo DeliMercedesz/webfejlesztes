@@ -376,7 +376,11 @@ article.szemelyes {
 /* Kapcsolat */
 
 label.error {
-    color: #FB3A3A;
+    label.error {
+    color: red;
+    font-weight: bold;
+    font-family: 'Cinzel';
+}
 }
 
 .kapcsolat {
