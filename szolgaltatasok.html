@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Deli Mercédesz">
+    <meta name="copyright" content="Oktatási célokra">
+    <meta name="description" content="Aphrodite modellügynökség oldala">
+    <link rel="apple-touch-icon" sizes="180x180" href="kepek/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="kepek/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="kepek/icon/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Aphrodite</title>
+
+</head>
+
+<body>
+    <header id="fent">
+        <h1>Aphrodite</h1>
+        <h3>"Kifinomultság a kifutón, elegancia az életben."</h3>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="model.html">Modellek</a></li>
+            <li><a href="#" class="akt">Szolgáltatások</a></li>
+            <li><a href="csatlakozz.html">Csatlakozz</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="container">
+
+        <article class="arlista">
+            <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post">
+                <h2>Modell foglalás</h2>
+                <h3>Válassz nemet</h3>
+                <p><label for="no">Nő <input type="radio" name="nem" id="no"></label>
+                    <label for="ferfi">Férfi <input type="radio" name="nem" id="ferfi"></label>
+                </p>
+                <hr>
+                <h3><label for="ido">Mennyi időre szeretnéd igénybe venni a szolgáltatást? (óra)</label></h3>
+                <p><input type="number" min="0" max="24" id="ido" name="ido"></p>
+                <hr>
+                <h3>Hétvégén szeretnéd igénybe venni a szolgáltatásunkat?</h3>
+                <p><label for="hetvege">Igen (+5000Ft)</label><input type="radio" name="hetvege" id="hetvege"></p>
+                <hr>
+                <h3>Milyen szolgáltatásra szeretnéd igénybevenni modellünket?</h3>
+                <p>
+                    <label for="divat">Divatfotózás (8000ft/óra)<input type="radio" name="szolgaltatas"
+                            id="divat"></label>
+                </p>
+                <p>
+                    <label for="portre">Portréfotózás (6000ft/óra)<input type="radio" name="szolgaltatas"
+                            id="portre">
+                    </label>
+                </p>
+                <p>
+                    <label for="katalog">Katalógusfotózás (7000ft/óra)<input type="radio" name="szolgaltatas"
+                            id="katalog"></label>
+                </p>
+                <p>
+                    <label for="kifuto">Kifutómodellkedés (10000ft/óra)<input type="radio" name="szolgaltatas"
+                            id="kifuto">
+                    </label>
+                </p>
+                <input type="button" id="mybutton" name="hozzaad" value="hozzáad" class="csatgomb">
+                <input type="reset" class="csatgomb" value="Törlés" name="Torol">
+                <hr>
+                <h3>Rendelés tartalma</h3>
+            </form>
+        </article>
+    </div>
+    <hr>
+    <footer>
+        <article class="also_gombok">
+            <a class="gomb" href="https://www.instagram.com"><h2>Közösségi oldalaink</h2></a>
+        </article>
+        <article class="also_gombok">
+            <a href="#fent" class="gomb"><h2>Ugorj az oldal elejére</h2></a>
+        </article>
+        <p>© Készítette: Deli Mercédesz - Budapesti Corvinus Egyetem, 2023</p>
+    </footer>
+    <script src="program.js">
+    </script>
+</body>
+
+</html>

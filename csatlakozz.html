@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Deli Mercédesz">
+    <meta name="copyright" content="Oktatási célokra">
+    <meta name="description" content="Aphrodite modellügynökség oldala">
+    <link rel="apple-touch-icon" sizes="180x180" href="kepek/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="kepek/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="kepek/icon/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myform").validate({
+                rules: {
+                    vnev: "required",
+                    knev: "required",
+                    lakhely: "required",
+                    szulido:"required",
+                    adatvedelem:"required",
+                    kep:"required",
+                    te:"required",
+                    honnan:"required",
+                    insta:{
+                        required: true,
+                        url:true,
+                    },
+                    email:{
+                        required: true,
+                        email:true,
+                    },
+                    telszam:{
+                        required:true,
+                        minlength:11,
+                        maxlength:11,
+                        number: true,
+                    },
+                    magas:{
+                        required: true,
+                        max: 220,
+                        min:0,
+                        number:true,
+                    },
+                    suly:{
+                        required: true,
+                        max: 100,
+                        min:0,
+                        number:true,
+                    },
+                    derek:{
+                        required: true,
+                        max: 80,
+                        min:0,
+                        number:true,
+                    },
+                    labm:{
+                        required: true,
+                        max: 50,
+                        min:0,
+                        number:true,
+                    },
+                },
+                messages: {
+                    vnev: "Kérlek írd be a vezetékneved!",
+                    knev: "Kérlek írd be a keresztneved!",
+                    lakhely: "Kérlek írd be a lakhelyed!",
+                    insta: "Kérlek URL-t adj meg!",
+                    email: "Kérlek valós email címet adj meg!",
+                    szulido:"Kérlek írd be a születési idődet!",
+                    adatvedelem:"Kérlek fogadd el a feltételeinket!",
+                    te:"Kérlek töltsd ki azt a mezőt",
+                    kep:"Kérlek tölts fel magadról egy képet",
+                    honnan:"Kérlek válassz!",
+                    telszam:
+                    {
+                        required:"Kérlek add meg a telefonszámodat!",
+                        minlength:"Kérlek valós telefonszámot adj meg!",
+                        maxlength:"Kérlek valós telefonszámot adj meg!",
+                        number:"Kérlek valós telefonszámot adj meg!",
+                    },
+                    magas:{
+                        required:"Kérlek add meg a magasságos!",
+                        max:"Túl nagy számot adtál meg",
+                        number:"Kérlek számot adj meg!",
+                        min:"Kérlek valós számot adj meg!"
+                    },
+                    suly:{
+                        required:"Kérlek add meg a súlyodat!",
+                        max:"Túl nagy számot adtál meg",
+                        number:"Kérlek számot adj meg!",
+                        min:"Kérlek valós számot adj meg!"
+                    },
+                    derek:{
+                        required:"Kérlek add meg a derékméretedet!",
+                        max:"Túl nagy számot adtál meg",
+                        number:"Kérlek számot adj meg!",
+                        min:"Kérlek valós számot adj meg!"
+                    },
+                    labm:{
+                        required:"Kérlek add meg a lábméretedet!",
+                        max:"Túl nagy számot adtál meg",
+                        number:"Kérlek számot adj meg!",
+                        min:"Kérlek valós számot adj meg!"
+                    },
+                },
+
+            });
+        });
+    </script>
+
+
+    <title>Aphrodite</title>
+</head>
+<body>
+    <header id="fent">
+        <h1>Aphrodite</h1>
+        <h3>"Kifinomultság a kifutón, elegancia az életben."</h3>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="model.html">Modellek</a></li>
+            <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+            <li><a href="#" class="akt">Csatlakozz</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="hatter2">
+    </div>
+
+    <div class="container">
+        <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="myform" novalidate >
+            <article class="jelentkezes">
+                <h3>Jelentkezz online</h3>
+                <p>A leggyorsabb és legkönnyebb módja, hogy csatlakozz hozzánk az az alábbi jelentkezési ív kitöltése.
+                    Miután meggyőződtél arról, hogy az összes mezőt kitöltötted és elküldted jelentkezésedet,
+                    munkatársunk
+                    hamarosan kapcsolatba lép veled. </p>
+                <article class="szemelyes">
+                    <h3>Személyes információk</h3>
+                    <p><label for="vnev">Vezetéknév:</label></p>
+                    <input type="text" name="vnev" class="doboz" id="vnev">
+                    <p><label for="knev">Keresztnév:</label></p>
+                    <input type="text" name="knev" class="doboz" id="knev">
+                    <p><label for="Email">Email cím:</label></p>
+                    <input type="email" name="email" class="doboz" id="Email">
+                    <p><label for="szulido">Születési idő:</label></p>
+                    <input type="date" name="szulido" class="doboz" id="szulido">
+                    <p><label for="lakhely">Lakhely:</label></p>
+                    <input type="text" name="lakhely" class="doboz" id="lakhely">
+                    <p><label for="telszam">Telefonszám:</label></p>
+                    <input type="number" name="telszam" class="doboz" id="telszam"  placeholder="36301234567">
+                    <p><label for="insta">Instagram (URL):</label></p>
+                    <input type="url" name="insta" class="doboz" id="insta">
+                </article>
+                <article class="szemelyes">
+                    <h3>Külső tulajdonságok</h3>
+                    <p><label for="magas">Magasság:</label></p>
+                    <input type="number" name="magas" class="doboz" id="magas" placeholder="cm">
+                    <p><label for="suly">Testsúly:</label></p>
+                    <input type="number" name="suly" class="doboz" id="suly" placeholder="kg">
+                    <p><label for="derek">Derékméret:</label></p>
+                    <input type="number" name="derek" class="doboz" id="derek" placeholder="cm">
+                    <p><label for="hajszin">Hajszín:</label></p>
+                    <input type="color" name="hajszin" class="doboz" id="hajszin">
+                    <p><label for="szemszin">Szemszín:</label></p>
+                    <input type="color" name="szemszin" class="doboz" id="szemszin">
+                    <p><label for="labm">Lábméret:</label></p>
+                    <input type="number" name="labm" class="doboz" id="labm">
+                </article>
+                <article class="szemelyes">
+                    <h3>Belső tulajdonságok</h3>
+                    <p><label for="magabiztos">Magabiztosság:</label></p>
+                    <input type="range" name="magabiztos" id="magabiztos" min="1" max="10" step="1" value="5"
+                        class="doboz">
+                    <p><label for="kitart">Kitartás:</label></p>
+                    <input type="range" name="kitart" id="kitart" min="1" max="10" step="1" value="5" class="doboz"
+                >
+                    <p><label for="rugalmas">Rugalmasság:</label></p>
+                    <input type="range" name="rugalmas" id="rugalmas" min="1" max="10" step="1" value="5" class="doboz"
+                      >
+                    <p><label for="te">Ki is vagy te?</label></p>
+                    <textarea name="te" class="doboz" id="te"
+                        placeholder="Pár mondatban fogalmazd meg, ki is vagy te valójában!"></textarea>
+                    <p>
+                    <p><label for="kep">Tölts fel egy képet magadról:</label></p>
+                    <input type="file" name="kep" id="kep">
+                    <p><label for="honnan">Honnan hallottál rólunk?</label></p>
+                    <select name="honnan" class="doboz" id="honnan">
+                        <option value="none" selected disabled hidden>Válassz!</option> 
+                        <option value="ismeros">Ismerős</option>
+                        <option value="google">Google</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="tiktok">Tiktok</option>
+                        <option value="egyeb">Egyéb</option>
+                    </select>
+                </article>
+                <p><label for="adatvedelem">Elolvastam és elfogadtam azt, ami az Adatvédelmi nyilatkozatban van. <input type="checkbox"
+                            name="adatvedelem" id="adatvedelem" value="igen"></label></p>
+                <p><input type="submit" class="csatgomb" value="Adatok elküldés" name="kuld" id="kuld"> <input
+                        type="reset" class="csatgomb" value="Törlés" name="Torol"></p>
+            </article>
+        </form>
+    </div>
+    <hr>
+    <footer>
+        <article class="also_gombok">
+            <a class="gomb" href="https://www.instagram.com">
+                <h2>Közösségi oldalaink</h2>
+            </a>
+        </article>
+        <article class="also_gombok">
+            <a href="#fent" class="gomb">
+                <h2>Ugorj az oldal elejére</h2>
+            </a>
+        </article>
+        <p>© Készítette: Deli Mercédesz - Budapesti Corvinus Egyetem, 2023</p>
+    </footer>
+</body>
+
+</html>
